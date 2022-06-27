@@ -20,4 +20,6 @@ p {
 a {
   color: orange;
   text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
 }
