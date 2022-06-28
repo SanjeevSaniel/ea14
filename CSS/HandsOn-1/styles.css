@@ -2,9 +2,17 @@ body {
   color: brown;
 }
 
+h1 {
+  color: red;
+}
+
 .headings {
   color: orangered;
   font-style: italic;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 #text-crossed {
