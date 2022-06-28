@@ -25,6 +25,7 @@ h1 {
 
 .css-usages li {
   font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
 }
 
 p {
