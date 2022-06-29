@@ -1,0 +1,213 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: white;
+  color: maroon;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px 100px;
+  display: inline-block;
+  border: 5px solid orangered;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 2px 1px;
+  box-shadow: 5px 5px purple;
+  box-sizing: border-box;
+}
+
+.boxes {
+  border: 10px solid green;
+  position: relative;
+  height: 600px;
+}
+
+.box-1 {
+  width: 250px;
+  height: 250px;
+  padding: 20px 5px;
+  color: maroon;
+  background-color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+  text-shadow: 2px 1px;
+  border: 7px solid orangered;
+  border-radius: 10px;
+  box-shadow: 7px 7px purple;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box-2 {
+  width: 250px;
+  height: 250px;
+  padding: 10px 5px;
+  color: maroon;
+  background-color: white;
+  text-align: center;
+  border: 7px solid orangered;
+  border-radius: 10px;
+  box-shadow: 7px 7px purple;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+}
+.box-3 {
+  width: 250px;
+  height: 250px;
+  padding: 10px 5px;
+  color: maroon;
+  background-color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: 2px 1px;
+  border: 7px solid orangered;
+  border-radius: 10px;
+  box-shadow: 7px 7px purple;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+.box-4 {
+  width: 250px;
+  height: 250px;
+  padding: 10px 5px;
+  color: maroon;
+  background-color: white;
+  text-align: center;
+  text-shadow: 2px 1px;
+  border: 7px solid orangered;
+  border-radius: 10px;
+  box-shadow: 7px 7px purple;
+  box-sizing: border-box;
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 40%;
+}
+input::placeholder {
+  text-align: center;
+}
+
+input[type="submit"] {
+  color: rgb(105, 15, 15);
+  font-size: 12px;
+  font-weight: bold;
+  background-color: orangered;
+  width: 35%;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.offer-card {
+  color: rgb(158, 11, 11);
+  border: 7px solid rgb(255, 94, 0);
+  background-color: rgb(176, 240, 50);
+  font-weight: bold;
+  font-style: italic;
+  padding: 15px 10px 5px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 7px 7px purple;
+  position: fixed;
+  left: 400px;
+  right: 400px;
+  bottom: 50px;
+}
+
+.offer-card span {
+  display: inline-flex;
+}
+
+.offer-message1 {
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+.offer-message2 {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.store {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.store-info {
+  border: 10px solid purple;
+  background-color: green;
+}
+
+.store-info h2 {
+  text-align: center;
+}
+.store-items {
+  display: flex;
+  font-style: italic;
+}
+
+.store-items div {
+  background-color: rgb(224, 224, 35);
+  text-align: center;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.store-items p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.others {
+  background-color: rgb(224, 224, 35);
+  text-align: center;
+  box-sizing: border-box;
+  font-style: italic;
+  margin: 5px;
+}
+
+.others p {
+  padding: 10px 10px 30px 10px;
+  font-weight: bold;
+}
+
+.others h2 {
+  padding-top: 20px;
+}
