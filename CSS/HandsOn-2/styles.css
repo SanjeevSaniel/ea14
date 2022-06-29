@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  border: 10px solid green;
-  border-right-color: greenyellow;
+  /* border: 10px solid green;
+  border-right-color: greenyellow; */
 }
 
 .container {
   margin: 0;
-  border: 10px solid greenyellow;
-  border-right-color: green;
+  border: 10px groove greenyellow;
+  /* border-right-color: green; */
   height: auto;
   background-image: url("./images/pexels-janko-ferlic-590477.jpg");
   background-size: cover;
