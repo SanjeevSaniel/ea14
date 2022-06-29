@@ -192,7 +192,6 @@ input[type="submit"] {
 
 .store-items p {
   padding: 10px;
-  font-weight: bold;
 }
 
 .others {
@@ -205,7 +204,6 @@ input[type="submit"] {
 
 .others p {
   padding: 10px 10px 30px 10px;
-  font-weight: bold;
 }
 
 .others h2 {
