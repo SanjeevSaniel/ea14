@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+header {
+  color: #0b4f85;
+  text-align: center;
+  background: rgb(184, 49, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(184, 49, 23, 1) 17%,
+    rgba(11, 165, 31, 1) 48%,
+    rgba(255, 226, 0, 1) 100%
+  );
+}
+
+header span {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+}
+
+.section-1 {
+    background-color: rgb(99, 199, 199);
+    border: 5px solid orangered;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.section-1 ul {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
