@@ -1,0 +1,108 @@
+body {
+  background: yellow;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0 0 10px rgb(109, 107, 107);
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.boxes ol {
+  text-align: center;
+  font-weight: 700;
+}
+
+.box {
+  display: flex;
+  margin: 2em;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  margin: 2em;
+}
+
+@keyframes transform1 {
+  100% {
+    transform: skewX(-25deg);
+  }
+
+  50% {
+    transform: skewX(25deg);
+  }
+
+  0% {
+    transform: skewX(-25deg);
+  }
+}
+
+.transform1 {
+  background-color: #5499c7;
+  animation: transform1 4s infinite;
+}
+
+@keyframes transform2 {
+  100% {
+    transform: skewY(25deg);
+  }
+
+  50% {
+    transform: skewY(-25deg);
+  }
+
+  0% {
+    transform: skewY(25deg);
+  }
+}
+
+.transform2 {
+  background-color: #af7ac5;
+  animation: transform2 3.5s infinite;
+}
+
+@keyframes transform3 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.transform3 {
+  background-color: #2980b9;
+  animation: transform3 3s infinite;
+}
+
+@keyframes transform41 {
+  50% {
+    transform: scaleY(0.5);
+  }
+}
+
+.transform41 {
+  background-color: #2471a3;
+  animation: transform41 4s infinite;
+}
+
+@keyframes transform42 {
+  50% {
+    transform: scaleX(0.5);
+  }
+}
+
+.transform42 {
+  background-color: #c0392b;
+  animation: transform42 4s infinite;
+}
+
+@keyframes transform43 {
+  50% {
+    transform: rotate(110deg);
+  }
+}
+
+.transform43 {
+  background-color: #229954;
+  animation: transform43 4s infinite;
+}
