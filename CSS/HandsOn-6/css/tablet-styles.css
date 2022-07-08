@@ -1,0 +1,164 @@
+@media screen and (min-width: 481px) and (max-width: 999px) {
+  body {
+    background: url(../images/sahara-desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container {
+    display: grid;
+    grid-template: repeat(6, auto) / auto;
+    grid-template-areas:
+      "header"
+      "about"
+      "card-one"
+      "card-two"
+      "card-three"
+      "card-four";
+
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .box-one {
+    grid-area: header;
+  }
+
+  .box-two {
+    grid-area: about;
+    padding: 0 2rem;
+  }
+
+  .card-one {
+    grid-area: card-one;
+  }
+
+  .card-two {
+    grid-area: card-two;
+  }
+
+  .card-three {
+    grid-area: card-three;
+  }
+
+  .card-four {
+    grid-area: card-four;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  ul {
+    display: inline;
+  }
+
+  .logo img {
+    width: 5rem;
+    height: 4rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+
+  .links {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    position: absolute;
+    right: 0;
+  }
+  .links ul {
+    color: white;
+  }
+  ul li {
+    display: inline;
+    padding-right: 1rem;
+    list-style-type: none;
+  }
+  .links img {
+    width: 3rem;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    font-size: 6rem;
+  }
+  p {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  button {
+    background: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+  }
+
+  .box-three {
+    display: grid;
+    grid-template: repeat(4, auto) / auto;
+    grid-template-areas: "card-one" "card-two" "card-three" "card-four";
+    gap: 1.5rem 2rem;
+    justify-content: stretch;
+    position: relative;
+  }
+
+  .card {
+    width: auto;
+    height: 25rem;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    transition: transform 250ms;
+  }
+
+  .text {
+    color: white;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-one {
+    background-image: url(../images/pic-1.png);
+    border-radius: 15px;
+  }
+
+  .card-two {
+    background-image: url(../images/pic-2.png);
+    border-radius: 15px;
+  }
+  .card-three {
+    background-image: url(../images/pic-3.png);
+    border-radius: 15px;
+  }
+  .card-four {
+    background-image: url(../images/pic-4.png);
+    border-radius: 15px;
+  }
+
+
+  h3 {
+    padding-left: 2rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .text p {
+    padding-left: 2rem;
+  }
+}

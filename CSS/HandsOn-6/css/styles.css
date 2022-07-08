@@ -1,0 +1,289 @@
+/* @media screen and (min-width: 1000px) {
+  .container-tablet,
+  .container-mobile {
+    display: none;
+  }
+  body {
+    background: url(../images/sahara-desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 0;
+    height: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    height: 6rem;
+  }
+
+  .logo {
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+  }
+
+  .logo img {
+    width: 4rem;
+    height: 3.5rem;
+  }
+
+  .nav-links ul {
+    display: inline-flex;
+    position: absolute;
+    right: 4rem;
+    color: white;
+    align-items: center;
+  }
+
+  .nav-links ul li {
+    padding: 1rem 1rem;
+    list-style-type: none;
+  }
+
+  .nav-links img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  article {
+    color: white;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  article > span {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+  }
+
+  .box {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .box-one {
+    background-image: url("./images/pic-1.png");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+  }
+  .box-two {
+    background-image: url("./images/pic-2.png");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+  }
+  .box-three {
+    background-image: url("./images/pic-3.png");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+  }
+  .box-four {
+    background-image: url("./images/pic-4.png");
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+  }
+} */
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url(../images/sahara-desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container {
+    display: grid;
+    /* 2 x 2 */
+    /* grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto); */
+    grid-template: 6rem auto / repeat(2, auto);
+    grid-template-areas:
+      "header header"
+      "about  cards";
+    gap: 1rem;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .box-one {
+    /* grid-column: 1 / -1; */
+    grid-area: header;
+  }
+
+  .box-two {
+    grid-area: about;
+    color: white;
+    padding: 0 4rem;
+  }
+
+  .box-three {
+    grid-area: cards;
+    padding: 0 4rem;
+  }
+
+  .navbar {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .logo img {
+    width: 5rem;
+    height: 4rem;
+    margin-left: 3rem;
+    padding-left: 1rem;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    position: absolute;
+    right: 0;
+  }
+
+  .links ul {
+    display: flex;
+    color: white;
+  }
+
+  ul li {
+    padding-right: 2rem;
+    list-style-type: none;
+  }
+
+  .links img {
+    width: 3rem;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 7rem;
+  }
+  p {
+    margin: 0;
+  }
+
+  button {
+    background: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+  }
+
+  .box-three {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    gap: 1.5rem 2rem;
+    position: relative;
+  }
+
+  .card {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: transform 250ms;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .text {
+    color: white;
+  }
+
+  .card-one {
+    background-image: url(../images/pic-1.png);
+    border-radius: 15px;
+  }
+
+   .card-two {
+    background-image: url(../images/pic-2.png);
+    border-radius: 15px;
+  }
+   .card-three {
+    background-image: url(../images/pic-3.png);
+    border-radius: 15px;
+  }
+   .card-four {
+    background-image: url(../images/pic-4.png);
+    border-radius: 15px;
+  }
+
+
+  /* .card-one .text {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+  }
+
+  .card-two .text {
+    position: absolute;
+    top: 1rem;
+    left: 22rem;
+  }
+
+  .card-three .text {
+    position: absolute;
+    left: 6rem;
+    bottom: 8rem;
+  }
+  .card-four .text {
+    position: absolute;
+    left: 22rem;
+    bottom: 8rem;
+  } */
+
+  h3 {
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+
+  .text p {
+    padding-left: 2rem;
+  }
+}
