@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Day-2</title>
+  </head>
+  <body>
+    <h1>Implementation Questions</h1>
+    1. Ordered List with Roman Numbers
+    <ol type="i">
+      <li>Mango</li>
+      <li>Banana</li>
+      <li>Apple</li>
+      <li>Strawberry</li>
+      <li>Orange</li>
+    </ol>
+
+    2. Unordered List with Roman Numbers
+    <ul type="circle">
+      <li>Mango</li>
+      <li>Banana</li>
+      <li>Apple</li>
+      <li>Strawberry</li>
+      <li>Orange</li>
+    </ul>
+    <br />
+    3. Write code to create a link to https://www.prepbytes.com. <br />
+    <a href="https://www.prepbytes.com" target="_blank">Prepbytes</a>
+    <br />
+    <br />
+    4. Write a code to insert an image. Two ways of adding an image. They are
+    relative and absolute paths.
+    <br />
+    Image with relative URL <br />
+    <img
+      src="./travel-concept-with-baggage.jpg"
+      width="400px"
+      height="200px"
+      alt="Travel Concepte"
+    />
+    <br />
+    <br />
+    Image with absolute URL. <br />
+    <img
+      src="https://images.pexels.com/photos/12739401/pexels-photo-12739401.jpeg?cs=srgb&dl=pexels-abdulkarim-tabaneh-12739401.jpg&fm=jpg"
+      width="300px"
+      height="400px"
+      alt=""
+    />
+    <br />
+    <br />
+
+    5. Write html code to create a 2*2 table : Table columns should be name and
+    salary , and provide two entries for this. <br /><br />
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>Sanjeev</td>
+        <td>50000</td>
+      </tr>
+      <tr>
+        <td>Vivek</td>
+        <td>52000</td>
+      </tr>
+    </table>
+    <br /><br />
+    6. Create a form contain input fields like name age email and contact.
+    <br />
+    <br />
+    <form action="">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Entery your name"
+        required
+      /><br /><br />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="Entery your age"
+        required
+      /><br /><br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Entery your email ID"
+        required
+      /><br /><br />
+      <label for="contact">Contact</label>
+      <input
+        type="tel"
+        name="contact"
+        id="contact"
+        placeholder="Entery your contact number"
+        required
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    7. Create a table and explain how to acheive colspan.<br />
+    <br />
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Company 1</th>
+        <th>Company 2</th>
+      </tr>
+      <tr>
+        <td>Sanjeev</td>
+        <td colspan="2">KPMG</td>
+      </tr>
+      <tr>
+        <td>Vivek</td>
+        <td>JPM</td>
+        <td>KC</td>
+      </tr>
+    </table>
+    <br /><br />
+    8. Create radio button (MERN, MEAN : course)and checkbox(HTML, CSS, React,
+    Node : technology) and explain the difference between these two.
+    <br />
+    <form action="">
+      <h2>Course</h2>
+      <input type="radio" name="Course" value="MERN" id="course1" />
+      <label for="course1">MERN</label> <br />
+      <input type="radio" name="Course" value="MEAN" id="course2" />
+      <label for="course2">MEAN</label>
+      <br />
+
+      <h2>Technology</h2>
+      <input
+        type="checkbox"
+        name="Technology"
+        value="HTML"
+        id="technology1"
+        required
+      />
+      <label for="technology1">HTML</label> <br />
+      <input
+        type="checkbox"
+        name="Technology"
+        value="CSS"
+        id="technology2"
+        required
+      />
+      <label for="technology2">CSS</label> <br />
+      <input
+        type="checkbox"
+        name="Technology"
+        value="React"
+        id="technology3"
+        required
+      />
+      <label for="technology3">React</label> <br />
+      <input
+        type="checkbox"
+        name="Technology"
+        value="Node"
+        id="technology4"
+        required
+      />
+      <label for="technology4">Node</label> <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+  </body>
+</html>
