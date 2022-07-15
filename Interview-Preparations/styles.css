@@ -114,7 +114,7 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url(https://cdn.pixabay.com/photo/2015/06/23/05/26/tajmahal-818317_960_720.jpg);
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/23/05/26/tajmahal-818317_960_720.jpg");
   background-size: cover;
 }
 
