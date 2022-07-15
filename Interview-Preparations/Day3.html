@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP- Day 3</title>
+    <style>
+        * {
+            font-size: 16px;
+        }
+    </style>
+  </head>
+  <body>
+    <pre>
+    1. Difference between flex row and column.
+        - The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it.
+            flex-direction: row | row-reverse | column | column-reverse
+    
+    2. Explain inline, internal and external stylesheet.
+        - INLINE = Inline CSS contains the CSS property in the body section attached with element. 
+                   This kind of style is specified within an HTML tag using the style attribute. 
+        - INTERNAL =  This can be used when a single HTML document must be styled uniquely.
+                      The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file. 
+        - EXTERNAL = External CSS contains separate CSS file which contains only style property with the help of tag attributes
+                     (For example class, id, heading, … etc).
+                     CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag.
+    
+    3. Justify-content allows you to do what ?
+        - The justify-content property specifies how flex-items are distributed along the main axis of their parent flex-container.
+          5 values: flex-start, flex-end, center, space-around, space-between.
+    
+    4. Difference between absolute and relative positioning.
+        - position: relative = places an element relative to its current position without changing the layout around it, whereas 
+          position: absolute = places an element relative to its parent’s position and changing the layout around it.
+        
+    5. What is grid-template-columns used for?
+        - it specifies the number (and the widths) of columns in a grid layout.
+          The values are a space separated list, where each value specifies the size of the respective column.
+    
+    6. What is the z-index in CSS?
+        - it specifies the stack order (Overlap) of an element.
+          An element with greater stack order is always in front of an element with a lower stack order.
+
+          Note: z-index only works on positioned elements 
+                (position: absolute, position: relative, position: fixed, or position: sticky) and 
+                flex items (elements that are direct children of display:flex elements).
+
+          z-index: auto|number|initial|inherit;
+        
+    7. What is the difference between padding and margin?
+        - Two sub-properties of CSS.
+          Margin = Margin is said to be the outer space of an element, 
+          i.e., the margin is the space outside of the element's border.
+
+          Note:-  both -ve and +ve values. Size of element remains the same.
+
+          Padding = Padding is said to be the inner space of an element, i.e., the padding is the space inside of the element's border.
+
+          Note:- only +ve values. Size of element increases.
+
+    8. What is box sizing?
+        - The box-sizing property in CSS defines how the user should calculate the total width and height of an element 
+          i.e padding and borders, are to be included or not.
+          Syntax:- box-sizing: content-box|border-box;
+
+    9. What is animation delay?
+        - The animation-delay property sets how much time passes before an animation starts. 
+          It’s expressed in seconds and milliseconds.
+
+        Syntax:- animation-delay: [time] | initial | inherit;
+             INITIAL returns the property to the default value for the element.
+             INHERIT turns the property into a child of the parent element.
+    
+    10. Which property you will use to merge cells vertically in grid?
+        - The grid-column property specifies a grid item's size and location in a grid layout
+          grid-column: grid-column-start / grid-column-end;
+    
+    11. Which property you will use to merge cells horizontally in grid?
+        - grid-row: grid-row-start / grid-row-end;
+
+    12. Explain CSS box model.
+        - The CSS Box Model is a term used for the container that wraps the following element properties within it.
+          Margin
+          Border
+          Padding
+          Content
+          Height and Width
+
+    13. What is the difference between display none and visibility hidden?
+        - display:none 
+            means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). 
+            There will be no space allocated for it between the other tags.
+
+          visibility:hidden 
+            means that unlike display:none, the tag is not visible, but space is allocated for it on the page. 
+            The tag is rendered, it just isn't seen on the page.
+    </pre>
+  </body>
+</html>
