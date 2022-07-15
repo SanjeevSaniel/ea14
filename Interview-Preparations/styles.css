@@ -79,21 +79,25 @@ h1 {
   width: 15rem;
   height: 15rem;
   border-radius: 30%;
-  animation: color-change 5s infinite;
+  animation: color-change 10s infinite;
   /* animation-duration: 4s; */
 }
 
 @keyframes color-change {
   0% {
     background-color: red;
+    border: 5px solid rgb(0, 26, 255);
   }
   25% {
     background-color: yellow;
+    border: 5px solid orangered;
   }
   50% {
     background-color: #00a5ec;
+    border: 5px double green;
   }
   100% {
     background-color: green;
+    border: 5px dotted rgb(255, 30, 105);
   }
 }
