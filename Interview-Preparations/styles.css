@@ -114,13 +114,14 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("https://cdn.pixabay.com/photo/2015/06/23/05/26/tajmahal-818317_960_720.jpg");
+  background-image: url("./taj-mahal-3132348_1280.jpg");
   background-size: cover;
 }
 
 .text {
   font-family: "Edu VIC WA NT Beginner", cursive;
   font-size: 2rem;
+  color: rgb(250, 54, 168);
 }
 
 .btn-master {
