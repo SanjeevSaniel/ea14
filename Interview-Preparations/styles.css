@@ -76,8 +76,9 @@ h1 {
 }
 
 .color-box {
-  width: 200px;
-  height: 200px;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30%;
   animation: color-change 5s infinite;
   /* animation-duration: 4s; */
 }
