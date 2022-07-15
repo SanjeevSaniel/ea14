@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -6,4 +6,93 @@
 
 h1 {
     font-size: 1.5rem;
+} */
+
+@import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap"rel="stylesheet">);
+
+.btn {
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 52px;
+  color: white;
+  background: #00a5ec;
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px grey;
+}
+
+.paragraph {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: aliceblue;
+  text-align: center;
+  background-color: coral;
+  transition: width 3s linear;
+}
+
+.box:hover {
+  width: 400px;
+}
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  background-color: chocolate;
+  border-radius: 100%;
+}
+
+.box2 {
+  color: white;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.box2::after {
+  content: "decrease screen size below 1000px to see the change";
+}
+
+@media screen and (max-width: 900px) {
+  .box2 {
+    background-color: #00a5ec;
+    width: 200px;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  .box2::after {
+    content: none;
+  }
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  animation: color-change 5s infinite;
+  /* animation-duration: 4s; */
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: #00a5ec;
+  }
+  100% {
+    background-color: green;
+  }
 }
