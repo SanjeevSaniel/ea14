@@ -11,7 +11,7 @@ h1 {
 @import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap"rel="stylesheet">);
 
 h1 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .btn {
@@ -104,4 +104,191 @@ h1 {
     background-color: green;
     border: 5px dotted rgb(255, 30, 105);
   }
+}
+
+.masterHead {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(https://cdn.pixabay.com/photo/2015/06/23/05/26/tajmahal-818317_960_720.jpg);
+  background-size: cover;
+}
+
+.text {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-size: 2rem;
+}
+
+.btn-master {
+  padding: 12px 52px;
+  width: 200px;
+  height: 50px;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: #e9e9e9;
+  box-shadow: 0 0 5px grey;
+  height: 75px;
+}
+
+.header > img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 2px;
+  left: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.btn-list {
+  background-color: #25aee9;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: inline-flex;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: coral;
+  margin: 30px;
+  padding: 85px 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-container {
+    display: inline;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 999px) {
+  .btn-colored {
+    background-color: coral;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .btn-colored {
+    background-color: green;
+  }
+}
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.box3 {
+  border: 1px solid grey;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box3:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
+.box4 {
+  width: 200px;
+  height: 100px;
+  background-color: #ffcccc;
+  transform: translate(40px, 30px) rotate(30deg);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px;
+  grid-template-rows: 30px 30px;
+  grid-auto-flow: row;
+}
+
+.item {
+  margin: 2px;
+  padding: 2px;
+}
+
+.item-a {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-color: #00a5ec;
+}
+.item-b {
+  background-color: yellow;
+}
+
+.item-c {
+  background-color: coral;
+}
+
+.item-d {
+  background-color: rgb(90, 172, 90);
+}
+
+.item-e {
+  grid-column: 5;
+  grid-row: 1 / 3;
+  background-color: aquamarine;
+}
+
+.box5 p {
+  color: rgb(226, 43, 165);
+}
+
+.btn-example1 {
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 52px;
+  color: white;
+  background: #00a5ec;
+  cursor: pointer;
+}
+
+.btn-example1:hover {
+    background-color: coral;
 }
