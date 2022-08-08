@@ -6,8 +6,11 @@ Note: You have to complete Print_pattern. No need to take any input.
 */
 
 const Print_pattern = (N) => {
-  for (let index = 1; index <= N; index++) {
-    console.log("*".repeat(index));
+  for (let row = 1; row <= N; row++) {
+    // console.log("*".repeat(index));
+    let pattern = "";
+    for (let i = 0; i < row; i++) pattern += "*";
+    console.log(pattern);
   }
 };
 
