@@ -5,3 +5,5 @@ const greet = () => {
 };
 
 greet();
+
+// Output --> Hello

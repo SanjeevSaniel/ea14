@@ -3,3 +3,5 @@ const arrowFunction = () => {
 };
 
 arrowFunction();
+
+// Output --> This is an Arrow Function

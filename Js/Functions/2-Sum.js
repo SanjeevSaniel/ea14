@@ -5,3 +5,5 @@ const sum = (x, y) => {
 };
 
 sum(3, 4);
+
+// Output --> Sum of 3, 4 is 7
