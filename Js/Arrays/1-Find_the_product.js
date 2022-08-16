@@ -7,9 +7,19 @@ Note: You have to complete Find_Prod. No need to take any input.
 */
 
 const Find_Prod = (array, N) => {
-    let result = 1;
-    for (let i = 0; i < N; i++) {
-        result *= array[i];
-    }
-    return result;
+  let result = 1;
+  for (let i = 0; i < N; i++) {
+    result *= array[i];
+  }
+  return result;
 };
+
+// const Find_Product = (array) => {
+//   const product = array.reduce((acc, value) => {
+//     acc = acc * value;
+//     return acc;
+//   }, 1);
+//   return product;
+// };
+
+// console.log(Find_Product([1, 2, 3, 4, 5]));

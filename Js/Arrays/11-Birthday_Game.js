@@ -8,7 +8,6 @@ She decides to share a contiguous segment of the chocolate bar selected such tha
 You must determine how many ways she can divide the chocolate.
 */
 
-// TODO: Not passing all test cases.
 // function Birthday_Game(arr, D, M) {
 //   let numberOfWays = 0;
 //   let sum = 0;
@@ -30,7 +29,7 @@ function Birthday_Game(arr, D, M) {
   let numberOfWays = 0; // store the total number of ways
   let numberOfSquares = arr.length; // length of the segment
   for (let i = 0; i < numberOfSquares; i++) {
-    let sum = 0; // sum of the integer on the squares
+    let sum = 0; // sum of the integer of the squares
     if (i + M > numberOfSquares) {
       // sum of current index and M should be < length of the segment
       return numberOfWays;

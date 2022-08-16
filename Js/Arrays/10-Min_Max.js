@@ -6,8 +6,6 @@ Congratulations on making up to this question. Let us give you a fairly simple a
 The problem statement is simple- given N elements, find the minimum and maximum numbers among those elements.
 */
 
-// TODO:
-
 function arrayMin(arr) {
   let temp = 0;
   for (let i = 0; i < arr.length; i++) {
