@@ -6,6 +6,5 @@ Complete the function in the editor. You have an object as a parameter. In which
 
 function Check(obj) {
   delete obj.rollno;
-  if (!obj.rollno) console.log("True");
-  else console.log("False");
+  return obj;
 }
