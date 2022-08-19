@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <h3>Question - 1</h3>
+  <p>Write the code to access element which is having id as "text"</p>
+  <p>-- const text = document.getElementById("text");</p>
+  <h3>Question - 2</h3>
+  <p>Write the code to access element which is having tag as "h1"</p>
+  <p>-- const tag = document.getElementsByTagName("h1");</p>
+  <h3>Question - 3</h3>
+  <p>Write the code to access element which is having class as "box"</p>
+  <p>-- const class = document.getElementsByClassName("box");</p>
+  <h3>Question - 4</h3>
+  <em>hover on HELLO</em><br>
+  <h1 id="hello"">Hello</h1>
+    Change the heading from ""Hello"" to ""Hello World"" using DOM functions
+    <p>-- document.getElementsByTagName(" h1").innerHTML="Hello World" ;</p>
+    <script>
+      const hello = document.getElementById("hello");
+      hello.addEventListener('mouseover', function handleMouseOver() {
+        document.getElementById("hello").innerHTML = "\"Hello World\"";
+      });
+      hello.addEventListener('mouseout', function handleMouseOut() {
+        document.getElementById("hello").innerHTML = "Hello";
+      });
+    </script>
+    <h3>Question - 5</h3>
+    <p>
+      Create three cards on HTML page and arrange them using flex property in
+      row or horizontal direction and also create button at the bottom named
+      "Change Flex direction". When user clicks on this button, the cards
+      arrangement should be changed to vertical direction.
+    </p>
+    <div id="boxes">
+      <div style="background-color:coral;">A</div>
+      <div style="background-color:lightblue;">B</div>
+      <div style="background-color:khaki;">C</div>
+    </div>
+    <button onclick="changeDirection()">Click Here</button>
+
+    <h3>Question - 6</h3>
+    <p>What’s the difference between window vs document?</p>
+    <h4>Window</h4>
+    - It is the root level element in any web page. <br />
+    - All the global variables are defined on the window object. <br />
+    - For example, alert(), confirm() are methods defined on the window object.
+    <br />
+    <h4>Document</h4>
+    - It is the direct child of the window object. <br />
+    - It is known as Document Object Model (DOM). <br />
+    - You can access it via window.document or document. <br />
+    - Document Object has many useful methods defined on it. For example,
+    document.getElementById(), document.getElementByTagName(),
+    document.createElement(), document.querySelector() and many more. <br />
+    <h3>Question - 7</h3>
+    <p>
+      <em>hover on HELLO</em><br>
+    <h1 id="heading">Hello</h1>
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the
+    above given h1 tag using DOM functions"</p>
+    <h3>Question - 8</h3>
+    <p>Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this
+      button page content should be changed to "Welcome to Elevation academy".</p>
+    <h1 id="content">Hello World</h1>
+    <button id="replaceBtn" onclick="replaceText()">Replace Text</button>
+
+
+
+    <h3>Question - 9</h3>
+    <p>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+    </p>
+    <div class="timer__container">
+      <div class="timer">
+        <span class="timer__duration">
+          <span id="clock-hours" class="timer__count">10</span>
+          <span class="timer__unit">hours</span>
+        </span>
+        <div class="timer__separator__dots">
+          <span class="timer__dots"></span>
+          <span class="timer__dots"></span>
+        </div>
+        <span class="timer__duration">
+          <span id="clock-minutes" class="timer__count">00</span>
+          <span class="timer__unit">mins</span>
+        </span>
+        <div class="timer__separator__dots">
+          <span class="timer__dots"></span>
+          <span class="timer__dots"></span>
+        </div>
+        <span class="timer__duration">
+          <span id="clock-seconds" class="timer__count">01</span>
+          <span class="timer__unit">secs</span>
+        </span>
+        <span id="clock-period" class="timer__period"> AM </span>
+        <img src="" alt="" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Question - 10</h3>
+    <p>Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</p>
+    <div>
+      <select name="year" id="year">Year
+        <option value="20-21">20-21</option>
+        <option value="21-22">21-22</option>
+      </select>
+    </div> <br>
+    <button id="showYear" onclick="displayYear()">Select Year</button> <br>
+    <p id="displayYear"></p> <br>
+
+    <h3>Question - 11</h3>
+    <p>"Create a form having name ,email, phone no. , birth year
+      Add validations - phone no. should start with 91 , it should be 10 digits email should be domain prepbytes.com
+      birth year should be > 95"</p>
+    <form name="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"> <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"> <br>
+      <label for="phone">Phone No:</label>
+      <input type="text" id="phone" name="phone"> <br>
+      <label for="year">Birth Year:</label>
+      <input type="number" id="year" name="year"> <br>
+      <input type="submit" value="Submit" onclick="validateForm()">
+    </form>
+
+    <script src=" ./script.js"></script>
+
+</html>
