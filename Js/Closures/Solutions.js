@@ -10,10 +10,14 @@ function counter() {
 }
 
 var counter = counter();
-alert(counter());
-alert(counter());
-alert(counter());
-alert(counter());
+// alert(counter());
+// alert(counter());
+// alert(counter());
+// alert(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
 // Output - 1 2 3 4
 
 // 2.

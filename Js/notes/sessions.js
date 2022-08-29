@@ -404,3 +404,348 @@ setTwo.forEach(function (values, keys) {
 });
 
 //! for sets just use .values
+
+//? August - 19
+//* First Class Functions (FCF's) -
+// FCF's are those functions which can be passed as an argument into anohter or can be returned from another functions. They are also called as First Class Citizens.
+const functionA = function (a) {
+  console.log(a);
+};
+
+function abc() {
+  console.log("I am abc function");
+}
+functionA(abc); // abc is a FCF
+// functionA is a Higher Order Function
+
+functionA(function ab() {
+  console.log("I am ab function");
+});
+
+const functionB = function () {
+  return function () {
+    console.log("I am a returned function");
+  };
+};
+
+let returnedValue = function () {
+  console.log("I am a returned function");
+};
+
+console.log(returnedValue);
+
+//* Higher Order Functions
+// These are those functions which takes functions as arguments or return functions as values.
+
+//* Callback Functions
+// These are those kind of functions, which can be callbacked after certain period of time or as and when required.
+
+const sayHi = (friendsName) => {
+  // callback function
+  console.log(`Hello ${friendsName}! I hope you are doing good`);
+};
+
+const greeting = (nameOfFriend, callbackFunction) => {
+  console.log(
+    `I am calling back a function named ${callbackFunction}. Watch Out!!`
+  );
+  callbackFunction(nameOfFriend); // sayHi("Sanjeev"), calling a callback function
+};
+
+greeting("Sanjeev", sayHi);
+
+//! Inheritance
+// brand, camera, android
+
+function Mobile(brand, camera, android) {
+  this.brand = brand;
+  this.camera = camera;
+  this.android = android;
+}
+
+const myMobile = new Mobile("Samsung", "64MP", "Android 12");
+const myMobile2 = new Mobile("Pixel", "10MP", "Android 13");
+
+console.log(myMobile);
+console.log(myMobile2);
+
+// Mobile { brand: 'Samsung', camera: '64MP', android: 'Android 12' }
+// Mobile { brand: 'Pixel', camera: '10MP', android: 'Android 13' }
+
+const student = {
+  name: "Sanjeev",
+  age: "25",
+  showDetails: function () {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+    // return (`Name: ${this.name}, Age: ${this.age}`);
+  },
+};
+
+student.showDetails();
+
+const studentTwo = {
+  name: "Ravi",
+};
+
+// Inheritance of properties and methods of an object
+//* studentTwo.__proto__ = student;
+//* console.log(studentTwo);
+//* console.log(studentTwo.age);
+//* studentTwo.showDetails();
+// console.log(studentTwo.showDetails());
+//* console.log("----");
+//* console.log(student.__proto__);
+//* console.log(student.__proto__.__proto__);
+//* console.log("----");
+//* console.log(studentTwo.__proto__);
+//* console.log(studentTwo.__proto__.__proto__);
+//* console.log(studentTwo.__proto__.__proto__.__proto__);
+
+// array
+//* let myArray = [1, 2, 3, 4, 5];
+//* console.log(myArray.__proto__);
+//* console.log(myArray.__proto__.__proto__);
+//* console.log(myArray.__proto__.__proto__.__proto__);
+
+//* function hello() {
+//*   console.log("Hi");
+//* }
+
+//* console.log(hello.__proto__);
+//* console.log(hello.__proto__.__proto__);
+//* console.log(hello.__proto__.__proto__.__proto__);
+
+//TODO: August - 23
+//? Call, Apply, Bind - They are used for function Borrowing.
+let employee1 = {
+  name: "Ravi",
+  employeeCode: 1,
+  domain: "Technical",
+  displayInfo: function () {
+    console.log(this.name, this.employeeCode, this.domain);
+  },
+};
+console.log(employee1.name);
+// employee1.displayInfo();
+
+let employee2 = {
+  name: "Arya",
+  employeeCode: 2,
+  domain: "Developer",
+};
+
+let employee3 = {
+  name: "Jaanvi",
+  employeeCode: 3,
+  domain: "HR",
+};
+
+employee1.displayInfo.call(employee2);
+employee1.displayInfo.call(employee3);
+
+//?
+let employee4 = {
+  name: "Ravi",
+  employeeCode: 1,
+  domain: "Technical",
+};
+
+let displayInfo = function (gender, age) {
+  console.log(this.name, this.employeeCode, this.domain, gender, age);
+};
+
+//! call() methods input format, first is always the object calling the function followed by the arguments.
+displayInfo.call(employee4, "Male", "25");
+displayInfo.call(employee3, "Female", "25");
+console.log("-------------------------------");
+
+//! apply()
+displayInfo.apply(employee1, ["Male", 25]); // arguments are passed in the form of an array.
+displayInfo.call(employee3, ["Female", "25"]);
+console.log("-------------------------------");
+
+//! bind()
+let resultBind = displayInfo.bind(employee1);
+resultBind("Male", 24);
+
+let result2 = displayInfo.bind(employee2);
+// console.log(result1);
+result2("Male", 25);
+
+let result3 = displayInfo.bind(employee3);
+// console.log(result1);
+result3("Female", 23);
+console.log("--------------------------------");
+
+displayInfo.bind(employee1)("Male", 24);
+
+//! Object.create()
+const PersonProto = {
+  calculateAge() {
+    //here in this.propertyName, this is pointing to the object that is calling this method....
+    console.log(
+      `My name is ${this.fName} ${this.lName} and current age is ${
+        2022 - this.bYear
+      }`
+    );
+  },
+  initialise(fName, lName, bYear) {
+    this.fName = fName;
+    this.lName = lName;
+    this.bYear = bYear;
+  },
+};
+
+const jarvis = Object.create(PersonProto);
+console.log(jarvis);
+
+jarvis.fName = "Jarvis";
+jarvis.lName = "Stewart";
+jarvis.bYear = 1994;
+console.log(jarvis);
+//jarvis.initialise("Jarvis","Stewart",1994);
+
+jarvis.calculateAge();
+
+const harry = Object.create(PersonProto);
+console.log(harry);
+harry.initialise("Harry", "Potter", 1980);
+
+console.log(harry);
+
+//TODO: August - 24
+//? Class
+/*
+Classes in javascript doesn't work exactly similar to that of classes in java/c++
+
+
+1. Classes are not hoisted
+2. Classes are called as First Class Citizens
+3. Classes are used in strict mode
+*/
+
+class PersonClass1 {
+  constructor() {}
+
+  calculateAge() {}
+}
+
+const PersonClass = class {
+  constructor(fName, lName, age) {
+    this.fName = fName;
+    this.lName = lName;
+    this.age = age;
+  }
+
+  calculateAge() {
+    console.log(`My name is ${this.fName} ${this.lName}`);
+  }
+};
+
+const jsClass = new PersonClass("Sanjeev", "Kujur", 25);
+console.log(jsClass);
+
+jsClass.calculateAge();
+
+PersonClass.prototype.greet = function () {
+  console.log(`Hi!`);
+};
+
+jsClass.greet();
+
+const StudentProto = Object.create(PersonProto);
+StudentProto.initial = function (fName, lName, course) {
+  PersonProto.initialise.call(StudentProto, fName, lName, course);
+  this.course = course;
+};
+
+StudentProto.introduce = function () {
+  console.log(
+    `Student's name is ${this.fName} ${this.lName} and is pursuing course as ${this.course}`
+  );
+};
+
+const sejhal = Object.create(StudentProto);
+console.log(sejhal);
+sejhal.initial("Sejhal", "Kaushal", 1994, "CSE");
+sejhal.introduce();
+sejhal.calculateAge();
+
+//TODO: August - 25
+//? Closures
+
+const ticketBooking = function () {
+  let passengerCount = 0;
+  let passengerCount1 = 0;
+  return function () {
+    passengerCount++;
+    passengerCount1++;
+    console.log(
+      `The count of the passenges are ${passengerCount} ${passengerCount1}`
+    );
+  };
+};
+
+const bookie = ticketBooking();
+console.log(bookie); // function definition
+console.dir(bookie);
+bookie(); // The count of the passenges are 1 1
+bookie(); // The count of the passenges are 2 2
+bookie(); // The count of the passenges are 3 3
+
+let h;
+const g = function () {
+  const a = 23;
+  h = function () {
+    console.log(a * 2);
+  };
+};
+
+g();
+h();
+console.log(h);
+
+const i = function () {
+  const b = 25;
+  h = function () {
+    console.log(b * 2);
+  };
+};
+
+i();
+h();
+
+// setTimeout and setInterval
+// setInterval(
+//   (param1, param2) => {
+//     console.log("Hey", param1, param2);
+//     console.log("Hey", param1, param2);
+//   },
+//   2000,
+//   "apple",
+//   "oranges"
+// );
+
+const boardPassengers = (n, wait) => {
+  const peoplePerGroup = n / 3; //60
+
+  setTimeout(() => {
+    console.log(`We are boarding all ${n} passengers`);
+    console.log(
+      `There are 3 groups with ${peoplePerGroup} passengers in each group`
+    );
+  }, wait * 1000); //3secs
+  console.log(`Starting onboarding of the passengers in ${wait} hrs`);
+};
+boardPassengers(180, 3);
+
+//? JQuery
+//Jquery - It is a JavaScript Library, which provides us an effective method for doing some changes in our
+// frontend and gives us essential features like DOM manipulation and AJAX interactions.
+
+$("button").click(function () {
+  // $("p").hide();
+  $("p").toggle();
+});
+
+//? Ajax

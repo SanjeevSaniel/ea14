@@ -84,4 +84,4 @@ function validateForm(event) {
   }
 }
 
-document.getElementById("myform").addEventListener("submit", validateForm);
+// document.getElementById("form").addEventListener("submit", validateForm);
