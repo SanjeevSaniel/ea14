@@ -14,5 +14,12 @@ $(".btn-show").click(function () {
 Create an ajax call, by using this api "https://jsonplaceholder.typicode.com/todos/12" and print the title as the heading of the page
 */
 $(".btn-ajax").click(function () {
-  $("#heading").load("https://jsonplaceholder.typicode.com/todos/12");
+  $.ajax({
+    url: "https://jsonplaceholder.typicode.com/todos/12",
+    type: "GET",
+    success: function (data) {
+      console.log(data);
+      document.getElementById("#heading").innerText = data.title;
+    },
+  });
 });

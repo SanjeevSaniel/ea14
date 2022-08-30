@@ -743,9 +743,24 @@ boardPassengers(180, 3);
 //Jquery - It is a JavaScript Library, which provides us an effective method for doing some changes in our
 // frontend and gives us essential features like DOM manipulation and AJAX interactions.
 
+// $("button").click(function () {
+//   // $("p").hide();
+//   $("p").toggle();
+// });
+
+//TODO: August 30, 2022
+//? Ajax
+// Asynchronous Javascript and XML
 $("button").click(function () {
-  // $("p").hide();
-  $("p").toggle();
+  $.ajax({
+    url: "https://jsonplaceholder.typicode.com/todos/2",
+    type: "GET",
+    success: function (data) {
+      console.log(data);
+      document.getElementById("para").innerText = data.title;
+    },
+  });
 });
 
-//? Ajax
+
+// Callback Hell
