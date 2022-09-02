@@ -166,13 +166,19 @@ Create a promise function accepting a argument, if yes is passed to the function
 const promiseOne = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("First Promise Resolved");
+    resolve(10);
   }, 1000);
 });
 
 const promiseTwo = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("Second Promise Resolved");
+    resolve(20);
   }, 2000);
 });
 
-Promise.all([promiseOne, promiseTwo]).then(() => {});
+Promise.all([promiseOne, promiseTwo]).then((results) => {
+  const total = results.reduce((previous, current) => previous + current);
+
+  console.log(total);
+});
