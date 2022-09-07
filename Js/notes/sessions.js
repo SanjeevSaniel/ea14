@@ -762,11 +762,11 @@
 // });
 
 // //? Callback Hell
-// // Callbacks are just the name/convention for using JavaScript. It instead of immediately returning results like other functions, takes time to produce the result. So, If we stuck in some particular call which prevents us from making further calls ends us into callback Hell.
-// // The structure of callback hell looks like pyramid/arrow shape.
-// // This makes our code look haphazard and makes it hard to understand.
-// // We should always try to avoid using multiple Callbacks to end up falling into callback hell.
-// // We use Promises to prevent using Callbacks and thereby avoiding Callback Hell.
+// Callbacks are just the name/convention for using JavaScript. It instead of immediately returning results like other functions, takes time to produce the result. So, If we stuck in some particular call which prevents us from making further calls ends us into callback Hell.
+// The structure of callback hell looks like pyramid/arrow shape.
+// This makes our code look haphazard and makes it hard to understand.
+// We should always try to avoid using multiple Callbacks to end up falling into callback hell.
+// We use Promises to prevent using Callbacks and thereby avoiding Callback Hell.
 
 // const getEmpId = () => {
 //   setTimeout(() => {
@@ -798,30 +798,30 @@
 
 // //TODO: August 31
 // //? Promises
-// // Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. It also allows us to make API calls or fetch data from Web Servers successfully. If not able to do so fetches us with an error message.
+// Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. It also allows us to make API calls or fetch data from Web Servers successfully. If not able to do so fetches us with an error message.
 
-// // It has three stages
-// // 1. Pending  2. Resolved(fulfilled)  3. Rejected
-// // const getId = new Promise((resolve, reject) => {
-// //   // Producer - resolve and reject are executor function
-// //   setTimeout(() => {
-// //     let id = [1, 2, 3, 4, 5];
-// //     resolve(id);
-// //     reject("Error in fetching the details");
-// //   }, 2000);
-// // });
+// It has three stages
+// 1. Pending  2. Resolved(fulfilled)  3. Rejected
+// const getId = new Promise((resolve, reject) => {
+//   // Producer - resolve and reject are executor function
+//   setTimeout(() => {
+//     let id = [1, 2, 3, 4, 5];
+//     resolve(id);
+//     reject("Error in fetching the details");
+//   }, 2000);
+// });
 
-// // Consumer
-// // getId
-// //   .then((data) => {
-// //     console.log("The data resolved is", data);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
-// // // .finally(() => {
-// // //   console.log("End of Promise");
-// // // })
+// Consumer
+// getId
+//   .then((data) => {
+//     console.log("The data resolved is", data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+// .finally(() => {
+//   console.log("End of Promise");
+// })
 
 // const getId = new Promise((resolve, reject) => {
 //   setTimeout(() => {
