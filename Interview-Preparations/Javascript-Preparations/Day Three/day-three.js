@@ -80,9 +80,14 @@ let counter;
 console.log(counter); // undefined
 console.log(typeof counter); // undefined
 
-// The null data type that has only one value null.
-let obj = null;
-console.log(typeof obj); // object
+// A not defined error is when we did not declare the variable and tried to call that variable.
+//x is not declared/defined
+function runX() {
+  return x;
+}
+
+//So we have an error of X is not defined
+console.log(runX());
 
 // NaN stands for Not a Number. It is a special numeric value that indicates an invalid number.
 console.log("a" / 2); // NaN;
