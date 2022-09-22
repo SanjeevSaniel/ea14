@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.heading {
+  text-shadow: 3px 3px 3px aqua;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.btn--func {
+  background-color: rgb(197, 220, 240);
+  margin-right: 30px;
+}
+
+.btn--cls {
+  background-color: aqua;
+  margin-left: 30px;
+}
+
+.component-box {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  margin-top: 30px;
+}
+
+.functional-component,
+.class-component {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+}
+
+.functional-component {
+  background-color: aqua;
+}
+
+.class-component {
+  background-color: rgb(194, 111, 194);
+}
+
+.paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+}
