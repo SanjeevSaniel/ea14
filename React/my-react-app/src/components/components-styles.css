@@ -1,3 +1,15 @@
+body {
+  width: 99vw;
+  height: 99vh;
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgba(90, 185, 196, 1) 4%,
+    rgba(188, 53, 53, 0.47429394120929624) 57%,
+    rgba(180, 17, 17, 0.11855164429052867) 80%
+  );
+}
+
 .App {
   text-align: center;
 }
