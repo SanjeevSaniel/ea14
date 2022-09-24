@@ -45,6 +45,7 @@
   text-align: center;
   margin: 30px;
   padding: 20px;
+  /* visibility: hidden; */
 }
 
 .functional-component {
