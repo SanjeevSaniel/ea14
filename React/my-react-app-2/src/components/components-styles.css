@@ -1,0 +1,40 @@
+body {
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgba(90, 185, 196, 1) 4%,
+    rgba(188, 53, 53, 0.47429394120929624) 57%,
+    rgba(180, 17, 17, 0.11855164429052867) 80%
+  );
+}
+
+.App {
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-flow: column;
+  position: absolute;
+  top: 5rem;
+}
+
+.heading {
+  color: black;
+}
+
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
