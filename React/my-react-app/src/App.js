@@ -24,8 +24,8 @@ function App() {
       </div>
 
       <div className="component-box">
-        <>{!funcHidden ? <FunctionalComponent /> : null}</>
-        <>{!clsHidden ? <ClassComponent /> : null}</>
+        {!funcHidden ? <FunctionalComponent /> : null}
+        {!clsHidden ? <ClassComponent /> : null}
       </div>
     </div>
   );
