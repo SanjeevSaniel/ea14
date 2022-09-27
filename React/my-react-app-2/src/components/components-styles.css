@@ -68,6 +68,7 @@ input[type="submit"]:hover {
 }
 
 .display-data {
+  text-align: center;
   width: 400px;
   height: fit-content;
   padding: 20px;
