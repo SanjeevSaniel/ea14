@@ -1,0 +1,81 @@
+body {
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgba(90, 185, 196, 1) 4%,
+    rgba(188, 53, 53, 0.47429394120929624) 57%,
+    rgba(180, 17, 17, 0.11855164429052867) 80%
+  );
+  min-height: 100vh;
+}
+
+.App {
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  justify-content: center;
+}
+
+#container,
+.form {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+.heading {
+  color: black;
+}
+
+label,
+input {
+  font-size: 20px;
+}
+
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(197, 237, 241);
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 50px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(153, 209, 214);
+}
+
+button:hover {
+  border: 2px solid grey;
+  box-shadow: 0 0 2px 2px rgb(241, 248, 249);
+  background-color: rgb(156, 207, 211);
+}
+
+#display-form-data {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  border: 2px solid green;
+  width: 80vw;
+  height: fit-content;
+  background-color: rgb(147, 209, 215);
+}
+
+.display-data {
+  text-align: center;
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+  margin: 15px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(255, 168, 182);
+  font-size: 20px;
+}
