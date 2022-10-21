@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Interview Preparations - Day 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>
+      1.
+      <a
+        href="https://www.codecademy.com/article/react-virtual-dom"
+        target="_blank"
+        >What is Virtual DOM ?</a
+      >
+    </h2>
+    <ol>
+      <li>
+        In React, for every DOM object, there is a corresponding “virtual DOM
+        object.” A virtual DOM object is a representation of a DOM object, like
+        a lightweight copy.
+      </li>
+      <li>
+        A virtual DOM object has the same properties as a real DOM object, but
+        it lacks the real thing’s power to directly change what’s on the screen.
+        Manipulating the DOM is slow.
+      </li>
+      <li>
+        Manipulating the virtual DOM is much faster, because nothing gets drawn
+        onscreen. Think of manipulating the virtual DOM as editing a blueprint,
+        as opposed to moving rooms in an actual house.
+      </li>
+    </ol>
+
+    <h2>2. <a href="" target="_blank">What is SPA ?</a></h2>
+    <ol>
+      <li>
+        The name single-page application generally refers to the application
+        consisting of one page that is constantly updated by JavaScript.
+      </li>
+      <li>
+        Requests to the server are now quicker since they contain just the data
+        needed to update the view.
+      </li>
+      <li>
+        SPAs are full applications, running in the browser yet still connected
+        to a server to update any application data.
+      </li>
+    </ol>
+
+    <h2>
+      3.
+      <a
+        href="https://www.codecademy.com/resources/docs/react/components"
+        target="_blank"
+        >What is difference between class and functional component ?</a
+      >
+    </h2>
+    <ol>
+      <li>
+        Class components contain a state and use a render() function to return
+        JSX markup. When defined, the class has to be an extension of the
+        React.Component class:
+        <pre>
+            import React from 'react';
+            class ClassComponent extends React.Component {
+              this.state = {
+                property1: "A string",
+                property2: 1,
+                property3: true
+              }
+          
+              render() {
+                return (
+                  &lt;div&gt;
+                    ...
+                  &lt;/div&gt;
+                )
+              };
+            };
+          </pre
+        >
+      </li>
+      <li>
+        Function components are stateless and only use the return statement. No
+        import statement necessary:
+        <pre>
+            const FunctionComponent = (props) => {
+              return (
+                &lt;div&gt;
+                  ...
+                &lt;/div&gt;
+              )
+            }
+        </pre>
+      </li>
+    </ol>
+
+    <h2>
+      4.
+      <a href="https://www.codecademy.com/resources/docs/react/state" target="_blank"
+        >What do you mean by state and its use in react ?</a
+      >
+    </h2>
+    <p>
+      The state object is where we store data in a component that is expected to
+      change over time. When the state object changes, the component re-renders.
+      State is created and maintained by the component itself. Class and
+      functional components handle state differently. Functional components use
+      hooks to manage state.
+      <pre>
+        class Car extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              brand: 'Chevrolet',
+              model: 'Malibu',
+              color: 'white',
+              year: 1998,
+            };
+          }
+          render() {
+            return (
+              &lt;div&gt;
+                &lt;h1&gt;My First Car&lt;/h1&gt;
+                &lt;p&gt;
+                  It is a {this.state.color}
+                  {this.state.brand}
+                  {this.state.model}
+                  made in {this.state.year}. 🚙
+                &lt;/p&gt;
+              &lt;/div&gt;
+            );
+          }
+        }
+      </pre>
+    </p>
+
+    <h2>5. <a href="https://www.codecademy.com/resources/docs/react/jsx" target="_blank">What is JSX and why do we use it instead of js ?</a></h2>
+    <p>
+        JSX is a syntax extension of JavaScript that combines the JavaScript and HTML-like syntax to provide highly functional, reusable markup. It’s used to create DOM elements which are then rendered in the React DOM. <br>
+        While not required in React, JSX provides a neat visual reqresentation of the application’s UI.
+    </p>
+
+    <h2>6. <a href="https://blog.ezekielekunola.com/understanding-the-package.json-file" target="_blank">What is package.json ?</a></h2>
+    <p>
+        A package.json is a JSON file that exists at the root of a Javascript/Node project. It holds metadata relevant to the project and it is used for managing the project’s dependencies, scripts, version and a whole lot more.
+    </p>
+  </body>
+</html>
