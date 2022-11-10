@@ -39,4 +39,4 @@
 6.  How do you import any module in Node.js ?
     - const module = require("module_name");
     - Example:
-      const http = require("http"
+      const http = require("http");
