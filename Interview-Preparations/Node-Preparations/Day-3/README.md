@@ -51,28 +51,28 @@
 
 4. Implement CORS.
 
-    const express = require('express');
-    const cors = require('cors');
+        const express = require('express');
+        const cors = require('cors');
     
-    const app = express();
+        const app = express();
     
-    app.use(cors())
+        app.use(cors())
     
-    app.get('/', (req, res) => {
-    res.json({
-    message: 'Hello World'
-    });
-    });
-    
-    app.get('/:name', (req, res) => {
-    let name = req.params.name;
-    
+        app.get('/', (req, res) => {
         res.json({
-            message: `Hello ${name}`
+        message: 'Hello World'
+        });
         });
     
-    });
+        app.get('/:name', (req, res) => {
+        let name = req.params.name;
     
-    app.listen(3000, () => {
-    console.log('server is listening on port 2020');
-    });
+            res.json({
+                message: `Hello ${name}`
+            });
+    
+        });
+    
+        app.listen(3000, () => {
+        console.log('server is listening on port 3000');
+        });
