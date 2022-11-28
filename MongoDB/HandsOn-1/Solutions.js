@@ -474,3 +474,8 @@ Human_Resource > db.employee.updateMany({ salary: { $gt: "70000" } }, { $set: { 
   upsertedCount: 0
 }
 
+// Query - 7
+// Delete all the documents from ""employee"" where last company is Y
+Human_Resource > db.employee.deleteMany({ lastCompany: "Y" })
+
+{ acknowledged: true, deletedCount: 6 }
