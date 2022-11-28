@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Name": "Aashish",
+    "Age": 24,
+    "Course": "MERN",
+    "Batch": "June"
+  },
+  {
+    "Id": 2,
+    "Name": "Ankit",
+    "Age": 23,
+    "Course": "MERN",
+    "Batch": "September"
+  },
+  {
+    "Id":3,
+    "Name": "Sanjana",
+    "Age": 62,
+    "Course": "MERN",
+    "Batch": "August"
+  },
+  {
+    "Id":4,
+    "Name": "Rohit",
+    "Age": 30,
+    "Course": "MERN",
+    "Batch": "July"
+  }
+]

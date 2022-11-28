@@ -1,0 +1,33 @@
+.data-table {
+  margin: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0.2rem;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.student-form {
+  /* width: max-content; */
+  height: min(25rem);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 10% 20% 0;
+}
+
+/* form {
+  display: flex;
+  justify-content: center;
+} */

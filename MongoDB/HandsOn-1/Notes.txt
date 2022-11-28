@@ -1,0 +1,45 @@
+-- 1. MongoDB commands for Databases
+# View all databases
+- show dbs
+
+# Create a new or Switch databases
+- use dbName
+
+# View Current database
+- db
+
+# Delete Database
+- db.dropDatabase()
+
+
+-- 2. MongoDB commands for Collections
+
+# View Collections
+- show collections
+
+# Create Collection
+- db.createCollection('Collection Name')
+
+# Drop Collection
+- db.<collection_name>.drop()
+
+-- 3. MongoDB commands for Rows
+
+# Show all Rows in a acollection
+- db.<collection_name>.find()
+- db.<collection_name>.find().pretty()
+
+# Insert One Row
+- db.<collection_name>.insert({
+    fieldName: value
+  })
+
+# Insert Many Rows
+- db.<collection_name>.insertMany([{
+    fieldName1: value
+  },
+  {
+    fieldName2: value
+  }])
+
+

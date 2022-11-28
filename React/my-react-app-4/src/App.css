@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(90, 185, 196);
+  background: linear-gradient(
+    180deg,
+    rgb(129, 227, 238) 4%,
+    rgba(199, 75, 75, 0.474) 57%,
+    rgba(201, 39, 39, 0.119) 80%
+  );
+  min-height: 100vh;
+}
