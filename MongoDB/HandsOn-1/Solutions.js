@@ -1,8 +1,8 @@
 // Create a Database named "Human_Resource"
-// - use Human_Resource
+   use Human_Resource
 
 // Create a Collection named "employee"
-// - db.createCollection("employee")
+   db.createCollection("employee")
 
 // Query - 3
 // Query the collection "employee" and list all the documents
@@ -464,3 +464,13 @@ Human_Resource > db.employee.find({ yearGrad: { $gt: "2015" }, overallExp: { $gt
 
 // Query - 6
 // Query the collection ""employee"" and update the salary of the employee whose salary is greater than 70000 to 65000.
+Human_Resource > db.employee.updateMany({ salary: { $gt: "70000" } }, { $set: { salary: "65000" } })
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+
