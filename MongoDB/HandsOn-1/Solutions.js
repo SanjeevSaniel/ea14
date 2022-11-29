@@ -268,7 +268,7 @@ Human_Resource > db.employee.find({ salary: { $gt: "30000" } })
     })
   ]
 
-// Query - 4
+// Query - 5
 // Query the collection "employee" and list the employees who are having experience more than 2 years
 Human_Resource > db.employee.find({ overallExp: { $gte: "2" } })
 [
@@ -365,7 +365,7 @@ Human_Resource > db.employee.find({ overallExp: { $gte: "2" } })
     })
   ]
 
-// Query - 5
+// Query - 6
 // Query the collection ""employee"" and list the employees who are graduated after 2015 and having experience more than 1 year
 Human_Resource > db.employee.find({ yearGrad: { $gt: "2015" }, overallExp: { $gt: "1" } })
   [
@@ -462,7 +462,7 @@ Human_Resource > db.employee.find({ yearGrad: { $gt: "2015" }, overallExp: { $gt
     })
   ]
 
-// Query - 6
+// Query - 7
 // Query the collection ""employee"" and update the salary of the employee whose salary is greater than 70000 to 65000.
 Human_Resource > db.employee.updateMany({ salary: { $gt: "70000" } }, { $set: { salary: "65000" } })
 
@@ -474,7 +474,7 @@ Human_Resource > db.employee.updateMany({ salary: { $gt: "70000" } }, { $set: { 
   upsertedCount: 0
 }
 
-// Query - 7
+// Query - 8
 // Delete all the documents from ""employee"" where last company is Y
 Human_Resource > db.employee.deleteMany({ lastCompany: "Y" })
 
