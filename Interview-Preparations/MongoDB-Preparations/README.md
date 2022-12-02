@@ -29,16 +29,24 @@
 6. How do you perform CRUD operations in MongoDB?
 
    - Create Operations
+
      - db.collection.insertOne()
      - db.collection.insertMany()
 
    - Read Operations
+
      - db.collection.find()
 
    - Update Operations
+
      - db.collection.updateOne()
      - db.collection.updateMany()
      - db.collection.replaceOne()
+
+   - Delete Operations
+   
+     - db.collection.deleteOne()
+     - db.collection.deleteMany()
 
 7. What is BSON?
 8. In what ways is MongoDB better than MySQL?
