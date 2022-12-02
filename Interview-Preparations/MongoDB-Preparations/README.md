@@ -2,20 +2,20 @@
 
 2. What is the command to sort the documents in ascending and descending value?
 
-- Ascending Order: db.Collection_Name.sort({ field_name: 1 })
-- Descending Order: db.Collection_Name.sort({ field_name: -1 })
+   Ascending Order: db.Collection_Name.sort({ field_name: 1 })
+   Descending Order: db.Collection_Name.sort({ field_name: -1 })
 
 3. Which command is used to create a collection in MongoDB?
 
-- db.createCollection("Collection_Name")
+   db.createCollection("Collection_Name")
 
 4. How to create and restore a backup?
 
--- Create Backup
+   Create Backup
 
-- mongodump OR
-- mongodump --db databaseName --collection collectionName OR
-- mongodump –db databaseName –collection collectionName –out c:\backup
+   - mongodump OR
+   - mongodump --db databaseName --collection collectionName OR
+   - mongodump –db databaseName –collection collectionName –out c:\backup
 
 -- Restore Backup
 
