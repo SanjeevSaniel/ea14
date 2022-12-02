@@ -13,8 +13,8 @@
 
    Create Backup
 
-   - mongodump OR
-   - mongodump --db databaseName --collection collectionName OR
+   - mongodump | OR
+   - mongodump --db databaseName --collection collectionName | OR
    - mongodump –db databaseName –collection collectionName –out c:\backup
 
 -- Restore Backup
