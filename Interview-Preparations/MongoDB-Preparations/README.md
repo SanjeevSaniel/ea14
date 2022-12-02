@@ -20,22 +20,25 @@
    Restore Backup
 
    - mongorestore dump | OR
-   - mongorestore  –db databaseName –collection collectionName directory/collectionName.bson
+   - mongorestore –db databaseName –collection collectionName directory/collectionName.bson
 
 5. How to create a new DATABASE?
-   How do you perform CRUD operations in MongoDB?
-   What is BSON?
-   In what ways is MongoDB better than MySQL?
-   What makes MongoDB the best?
-   Which syntax is used to drop a collection in MongoDB?
-   What is the use of the db command?
-   What is the command to find the single record from the collection?
-   Can MongoDB replace MySQL?
-   MongoClient and Mongoose
-   What is MongoClient?
-   What is Mongoose?
-   To start with any query using mongoose, what are the steps that you have follow?
-   What is Schema Validation in Mongoose?
-   How do you Delete a Document?
-   What is Sharding in MongoDB?
-   What is the “\_\_v” field in Mongoose?
+
+   - use databaseName
+
+6. How do you perform CRUD operations in MongoDB?
+7. What is BSON?
+8. In what ways is MongoDB better than MySQL?
+9. What makes MongoDB the best?
+10. Which syntax is used to drop a collection in MongoDB?
+11. What is the use of the db command?
+12. What is the command to find the single record from the collection?
+13. Can MongoDB replace MySQL?
+14. MongoClient and Mongoose
+15. What is MongoClient?
+16. What is Mongoose?
+17. To start with any query using mongoose, what are the steps that you have follow?
+18. What is Schema Validation in Mongoose?
+19. How do you Delete a Document?
+20. What is Sharding in MongoDB?
+21. What is the “\_\_v” field in Mongoose?
