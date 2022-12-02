@@ -125,10 +125,43 @@
                 });
 
             3. Insert the article in our MongoDB database
-            
+
                 await article.save();
 
 17. What is Schema Validation in Mongoose?
+
+    Schema validation is a key concept while developing any backend application. Sometimes clients provide inputs which are not according to our requirements. For such cases, we need to implement the validation of any information being inserted into the database.
+
+    MongoDB provides the convenience of validating data while inserting a new entry into your database documents, such as:
+
+    - Checking if an email is unique or not
+    - Checking if a given value is in a particular range
+    - Checking if the phone number is 10 digits or not.
+
+            const studentSchema = mongoose.Schema({
+                name: String,
+                age: {
+                    type: Number,
+                    min: 15,
+                    max: 30
+                },
+                batch :{
+                    type: String,
+                    required: true
+                }
+            })
+
 18. How do you Delete a Document?
+
+    - db.collection.deleteOne({ "_id" : 3 })
+    - db.collection.deleteMany({ category: "Technology" })
+
 19. What is Sharding in MongoDB?
-20. What is the “\_\_v” field in Mongoose?
+
+    Sharding is a method for distributing data across multiple machines. MongoDB uses sharding to support deployments with very large data sets and high throughput operations.
+
+    Database systems with large data sets or high throughput applications can challenge the capacity of a single server.
+
+20. What is the “__v” field in Mongoose?
+
+    
