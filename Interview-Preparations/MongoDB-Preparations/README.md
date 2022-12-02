@@ -153,7 +153,7 @@
 
 18. How do you Delete a Document?
 
-    - db.collection.deleteOne({ "_id" : 3 })
+    - db.collection.deleteOne({ "\_id" : 3 })
     - db.collection.deleteMany({ category: "Technology" })
 
 19. What is Sharding in MongoDB?
@@ -164,4 +164,4 @@
 
 20. What is the “__v” field in Mongoose?
 
-    
+    In Mongoose the “__v” field is the versionKey is a property set on each document when first created by Mongoose. This is a document inserted through the mongo shell in a collection and this key-value contains the internal revision of the document.
