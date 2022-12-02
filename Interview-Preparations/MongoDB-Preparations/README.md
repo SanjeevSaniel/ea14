@@ -7,7 +7,7 @@
 
 3. Which command is used to create a collection in MongoDB?
 
-   db.createCollection("Collection_Name")
+   - db.createCollection("Collection_Name")
 
 4. How to create and restore a backup?
 
@@ -27,6 +27,11 @@
    - use databaseName
 
 6. How do you perform CRUD operations in MongoDB?
+
+   - Create Operations
+     -- db.collection.insertOne()
+     -- db.collection.insertMany()
+
 7. What is BSON?
 8. In what ways is MongoDB better than MySQL?
 9. What makes MongoDB the best?
