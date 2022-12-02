@@ -1,65 +1,134 @@
-1. Which is the command that helps in processing the data?
+1.  Which is the command that helps in processing the data?
 
-2. What is the command to sort the documents in ascending and descending value?
+    db.collection_name.aggregate(aggregate_operation)
 
-   Ascending Order: db.Collection_Name.sort({ field_name: 1 })
-   Descending Order: db.Collection_Name.sort({ field_name: -1 })
+2.  What is the command to sort the documents in ascending and descending value?
 
-3. Which command is used to create a collection in MongoDB?
+    Ascending Order: db.Collection_Name.sort({ field_name: 1 })
+    Descending Order: db.Collection_Name.sort({ field_name: -1 })
 
-   - db.createCollection("Collection_Name")
+3.  Which command is used to create a collection in MongoDB?
 
-4. How to create and restore a backup?
+    - db.createCollection("Collection_Name")
 
-   Create Backup
+4.  How to create and restore a backup?
 
-   - mongodump | OR
-   - mongodump --db databaseName --collection collectionName | OR
-   - mongodump –db databaseName –collection collectionName –out c:\backup
+    Create Backup
 
-   Restore Backup
+    - mongodump | OR
+    - mongodump --db databaseName --collection collectionName | OR
+    - mongodump –db databaseName –collection collectionName –out c:\backup
 
-   - mongorestore dump | OR
-   - mongorestore –db databaseName –collection collectionName directory/collectionName.bson
+    Restore Backup
 
-5. How to create a new DATABASE?
+    - mongorestore dump | OR
+    - mongorestore –db databaseName –collection collectionName directory/collectionName.bson
 
-   - use databaseName
+5.  How to create a new DATABASE?
 
-6. How do you perform CRUD operations in MongoDB?
+    - use databaseName
 
-   - Create Operations
+6.  How do you perform CRUD operations in MongoDB?
 
-     - db.collection.insertOne()
-     - db.collection.insertMany()
+    - Create Operations
 
-   - Read Operations
+      - db.collection.insertOne()
+      - db.collection.insertMany()
 
-     - db.collection.find()
+    - Read Operations
 
-   - Update Operations
+      - db.collection.find()
 
-     - db.collection.updateOne()
-     - db.collection.updateMany()
-     - db.collection.replaceOne()
+    - Update Operations
 
-   - Delete Operations
-   
-     - db.collection.deleteOne()
-     - db.collection.deleteMany()
+      - db.collection.updateOne()
+      - db.collection.updateMany()
+      - db.collection.replaceOne()
 
-7. What is BSON?
-8. In what ways is MongoDB better than MySQL?
-9. What makes MongoDB the best?
+    - Delete Operations
+
+      - db.collection.deleteOne()
+      - db.collection.deleteMany()
+
+7.  What is BSON?
+
+    BSON stands for Binary JSON. It is a binary file format that is used to store serialized JSON documents in a binary-encoded format. It was developed in 2009 by MongoDB. It extends JSON and provides more data types and fields.
+
+8.  In what ways is MongoDB better than MySQL?
+
+    MongoDB has a flexible data model where-in the schema can be expanded based on business needs. Also, MongoDB is faster and can handle more data types to manage real-time applications better.
+
+9.  What makes MongoDB the best?
+
+    MongoDB is considered to be the best NoSQL database because of its following features:
+
+    - Document-oriented (DO)
+    - High performance (HP)
+    - High availability (HA)
+    - Easy scalability
+    - Rich query language
+
 10. Which syntax is used to drop a collection in MongoDB?
+
+    - db.collection.drop()
+
 11. What is the use of the db command?
+
+    The db command gives the name of the currently selected database.
+
 12. What is the command to find the single record from the collection?
+
+    - db.collectionn.findOne({ "field": "content" })
+
 13. Can MongoDB replace MySQL?
-14. MongoClient and Mongoose
-15. What is MongoClient?
-16. What is Mongoose?
-17. To start with any query using mongoose, what are the steps that you have follow?
-18. What is Schema Validation in Mongoose?
-19. How do you Delete a Document?
-20. What is Sharding in MongoDB?
-21. What is the “\_\_v” field in Mongoose?
+
+    MongoDB is a cross-platform document-oriented and NoSQL database that allows fast changes over time in the database as the application grows but both have their pros and cons Mysql is open source, secure, and provides high flexibility whereas MongoDB provides speed, ability to handle unstructured data, etc. Considering all these points we can say yes MongoDB has the potential to replace MySQL.
+
+14. What is MongoClient?
+    The MongoClient class is a class that allows for making Connections to MongoDB.
+
+        const MongoClient = require('mongodb').MongoClient;
+
+15. What is Mongoose?
+
+    Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+
+16. To start with any query using mongoose, what are the steps that you haved follow?
+
+            1. Create a Schema and Model
+                import mongoose from 'mongoose';
+
+                const { Schema, model } = mongoose;
+
+                const blogSchema = new Schema({
+                    title: String,
+                    tags: [String],
+                    createdAt: Date,
+                    updatedAt: Date,
+                    comments: [{
+                        user: String,
+                        content: String,
+                        votes: Number
+                    }]
+                });
+
+                const Blog = model('Blog', blogSchema);
+
+            2. Create a new blog post object
+
+                const article = new Blog({
+                    title: 'Awesome Post!',
+                    slug: 'awesome-post',
+                    published: true,
+                    content: 'This is the best post ever',
+                    tags: ['featured', 'announcement'],
+                });
+
+            3. Insert the article in our MongoDB database
+            
+                await article.save();
+
+17. What is Schema Validation in Mongoose?
+18. How do you Delete a Document?
+19. What is Sharding in MongoDB?
+20. What is the “\_\_v” field in Mongoose?
