@@ -17,9 +17,10 @@
    - mongodump --db databaseName --collection collectionName | OR
    - mongodump –db databaseName –collection collectionName –out c:\backup
 
--- Restore Backup
+   Restore Backup
 
--
+   - mongorestore dump | OR
+   - mongorestore  –db databaseName –collection collectionName directory/collectionName.bson
 
 5. How to create a new DATABASE?
    How do you perform CRUD operations in MongoDB?
