@@ -5,15 +5,8 @@ Write a program that takes a number and prints whether the number is divisible b
 Note: You have to complete Check_divisibility. No need to take any input
 */
 
-const Calculator = (A, B, C) => {
-  switch (A) {
-    case "+":
-      return B + C;
-    case "-":
-      return B - C;
-    case "*":
-      return B * C;
-    case "/":
-      return B / C;
-  }
+const Check_divisibility = (N) => {
+  console.log(
+    N % 6 === 0 && N % 9 === 0 ? "Divisible by both" : "Not Divisible by both"
+  );
 };
